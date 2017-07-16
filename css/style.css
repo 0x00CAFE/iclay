@@ -1,0 +1,1093 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    letter-spacing: 0em;
+    font-family: ".SFNSDisplay-Regular", system-ui, BlinkMacSystemFont, -apple-system, "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+}
+
+sup {
+    font-size: .6em;
+    opacity: .8;
+    vertical-align: top;
+    position: relative;
+    bottom: -.2em;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 48px;
+    max-height: 44px;
+    background: #333;
+    background: rgba(0,0,0,0.8);
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+footer {
+    background: #f2f2f2;
+    padding-top: 100px;
+    font-size: 11px;
+    line-height: 1.45455;
+    font-weight: 400;
+    letter-spacing: .005em;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.content-head {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-item {
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: top;
+}
+
+.nav-placeholder {
+    height: 44px;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 9997;
+    color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.nav-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+.nav-content {
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.nav-title {
+    font-size: 24px;
+    line-height: 2.125;
+    font-weight: 500;
+    letter-spacing: .015em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    cursor: default;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
+}
+
+.nav-title a {
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #333;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.section-header {
+    background-color: #fafafa;
+}
+
+.section-header-title {
+    padding: 102px 0 0;
+}
+
+.section-compare {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.58824;
+    font-weight: 400;
+    letter-spacing: .016em;
+    background: #f2f2f2;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+}
+
+.section-compare .compare-headline {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: .006em;
+    margin-bottom: 0.75em;
+}
+
+.section-display-compare {
+    text-align: left;
+    margin-top: 47px;
+    background-color: #f2f2f2;
+}
+
+.section-card {
+    padding: 20px;
+    display: flex;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.section-card-left {
+    margin-right: 10px;
+    padding: 102px 20px 88px;
+    width: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+.section-card-right {
+    padding: 0 20px 0;
+    margin-left: 10px;
+    width: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+.section-card-center {
+    margin-right: 10px;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+.section-card-intro {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.section-card-center .section-card-intro {
+    max-width: 980px;
+    padding: 20px;
+}
+
+.card-headline {
+    font-size: 22px;
+    line-height: 1.45455;
+    font-weight: 600;
+    letter-spacing: .016em;
+}
+
+.section-card-intro p {
+    margin-top: 18px;
+    font-size: 22px;
+    line-height: 1.45455;
+    font-weight: 300;
+    letter-spacing: .016em;
+}
+
+.section-card-badge {
+    text-align: left;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 102px;
+    margin-bottom: 88px;
+    display: flex;
+}
+
+.section-card-badge-50 {
+   width: 50%;
+   float: left;
+}
+
+.section-card-badge .badge {
+    color: #333;
+    display: inline-block;
+    font-size: 20px;
+    min-width: 5em;
+    position: relative;
+    margin-right: 1em;
+}
+
+.section-card-badge .badge .badge-content {
+    margin: 0 0 1em;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.badge-value {
+    font-size: 68px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .003em;
+}
+
+.badge-value-sm {
+    font-size: 60px;
+}
+
+.section-display-image {
+    padding: 20px 0 100px;
+    background: #fafafa;
+    transition: opacity .4s ease-out;
+    opacity: 1;
+}
+
+.badge-unit {
+    font-size: 37px;
+    line-height: 1.18919;
+    font-weight: 800;
+    letter-spacing: .009em;
+}
+
+.badge-caption {
+    font-size: 15px;
+    line-height: 1.26667;
+    font-weight: 600;
+    letter-spacing: -.014em;
+    color: #666;
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+.badge-caption:first-child {
+    top: auto;
+    bottom: 100%;
+}
+
+.image-overview-hero {
+    background-size: 980px 765px;
+    background-repeat: no-repeat;
+    background-image: url(../img/iclay_main.jpg);
+    width: 980px;
+    height: 765px;
+    left: 50%;
+    margin-left: -490px;
+    position: relative;
+}
+
+.image-overview-display {
+    background-size: 980px 728px;
+    background-repeat: no-repeat;
+    width: 980px;
+    height: 728px;
+    left: 50%;
+    margin-left: -490px;
+    position: relative;
+}
+
+.image-display {
+    background-image: url(../img/iclay_display.jpg);
+}
+
+.image-display-blur {
+    background-image: url(../img/iclay_display_blur.jpg);
+}
+
+.image-writing {
+    background-image: url(../img/iclay_writing.jpg);
+}
+
+.image-writing-blur {
+    background-image: url(../img/iclay_writing_blur.jpg);
+}
+
+.image-app {
+    background-image: url(../img/iclay_app.jpg);
+}
+
+.image-app-blur {
+    background-image: url(../img/iclay_app_blur.jpg);
+}
+
+.image-design {
+    background-image: url(../img/iclay_design.jpg);
+}
+
+.image-design-blur {
+    background-image: url(../img/iclay_design_blur.jpg);
+}
+
+.image-languages {
+    background-image: url(../img/iclay_languages.jpg);
+}
+
+.image-languages-blur {
+    background-image: url(../img/iclay_languages_blur.jpg);
+}
+
+.image-color {
+    background-image: url(../img/iclay_color.jpg);
+}
+
+.image-color-blur {
+    background-image: url(../img/iclay_color_blur.jpg);
+}
+
+.image-pencil {
+    background-image: url(../img/iclay_pencil.jpg);
+}
+
+.image-pencil-blur {
+    background-image: url(../img/iclay_pencil_blur.jpg);
+}
+
+.product-name {
+    font-size: 74px;
+    line-height: .67568;
+    font-weight: 600;
+    letter-spacing: .004em;
+}
+
+.product-caption {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: 0em;
+    margin-top: 24px;
+}
+
+.product-intro {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .016em;
+    margin-top: 26px;
+}
+
+.column {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    min-height: 2px;
+}
+
+.column-product-copy {
+    font-size: 22px;
+    line-height: 1.45455;
+    font-weight: 300;
+    letter-spacing: .016em;
+    padding-top: 83px;
+}
+
+.column .features .column-box {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+}
+
+
+.column .features p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 156px;
+}
+
+.column .features {
+    margin-top: 80px;
+    padding-bottom: 111px;
+    font-size: 17px;
+    line-height: 1.35298;
+    font-weight: 400;
+    letter-spacing: .008em;
+    font-weight: bold;
+}
+
+.column .features .feature-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+.column .features .image-icon {
+    width: 52px;
+    height: 44px;
+    background-size: 52px 44px;
+    background-repeat: no-repeat;
+}
+
+.feature-headline {
+    font-size: 68px;
+    line-height: 1.14412;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+
+.feature-eyebrow {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: .016em;
+    margin-bottom: 26px;
+    display: block;
+}
+
+.row {
+    max-height: 98px;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.row:before, .row:after {
+    content: ' ';
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.row:before, .row:after {
+    content: ' ';
+    display: table;
+}
+
+.image-compare {
+    margin-left: 25%;
+    width: 25%;
+    float: left;
+}
+
+.image-compare-right {
+    margin-left: 8.33333%;
+}
+
+.image-compare .image-compare-iclay {
+    width: 106px;
+    height: 149px;
+    background-size: 106px 149px;
+    background-repeat: no-repeat;
+    background-image: url(../img/iclay.png);
+    margin-top: 40px;
+    margin-bottom: 27px;
+}
+
+.image-compare .image-compare-iclay-pro {
+    width: 182px;
+    height: 191px;
+    background-size: 182px 191px;
+    background-image: url(../img/iclay_pro.png);
+    background-repeat: no-repeat;
+    margin-bottom: 27px;
+}
+
+.section-compare .compare-features {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #666;
+    margin: 13px 0 0;
+    list-style: none;
+}
+
+.section-compare .compare-product {
+    font-size: 24px;
+    line-height: 1.33349;
+    font-weight: 500;
+    letter-spacing: .016em;
+}
+
+.buy {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    border-bottom: 1px solid #d6d6d6;
+    padding-top: 4px;
+    padding-bottom: 56px;
+    text-align: center;
+}
+
+.buy-box {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+    width: 25%;
+}
+
+.buy-box-content {
+    margin: 0 auto;
+    padding-top: 56px;
+    position: relative;
+    text-align: center;
+    width: 216px;
+    z-index: 1;
+}
+
+.buy-box-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.buy-box-content .buy-title {
+    font-size: 19px;
+    line-height: 1.26316;
+    font-weight: 500;
+    letter-spacing: .018em;
+    margin-top: 0.125em;
+}
+
+.buy-box-content .buy-icon {
+    margin: 0 auto;
+    width: 74px;
+    height: 74px;
+    background-size: 74px 74px;
+    background-repeat: no-repeat;
+}
+
+.buy-box-content .buy-icon-box {
+    background-image: url(../img/box.png);
+}
+
+.buy-box-content .buy-icon-bag {
+    background-image: url(../img/bag.png);
+}
+
+.buy-box-content .buy-icon-loan {
+    background-image: url(../img/loan.png);
+}
+
+.buy-box-content .buy-icon-chat {
+    background-image: url(../img/chat.png);
+}
+
+.buy-info-copy {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.information {
+    border-bottom: 1px solid #d6d6d6;
+    padding: 17px 5px 11px;
+}
+
+.information ul {
+    list-style: none;
+    margin: 0;
+}
+
+.information ol {
+    list-style-position: outside;
+    margin: 0;
+    padding: 0 17px;
+}
+
+.information li {
+    font-size: 11px;
+    line-height: 1.45455;
+    font-weight: 400;
+    letter-spacing: .005em;
+    padding-bottom: 4px;
+}
+
+.pad {
+    height: 50px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.credit {
+    padding: 20px 0 10px;
+}
+
+.credit a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.buy-button-wrapper {
+    font-size: 12px;
+    line-height: 2.125;
+    font-weight: 400;
+    letter-spacing: 0em;
+    float: right;
+    margin-top: 0;
+    padding-top: 12px;
+}
+
+.buy-button {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0em;
+    background-color: #0070c9;
+    background: -webkit-linear-gradient(#42a1ec, #0070c9);
+    background: linear-gradient(#42a1ec, #0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.feature-icon-display {
+    background-image: url(../img/display.png);
+}
+
+.feature-icon-clay {
+    background-image: url(../img/clay.png);
+}
+
+
+.feature-icon-battery {
+    background-image: url(../img/battery.png);
+}
+
+
+.feature-icon-languages {
+    background-image: url(../img/languages.png);
+}
+
+
+.feature-icon-alphabet {
+    background-image: url(../img/alphabet.png);
+}
+
+
+.feature-icon-smooth {
+    background-image: url(../img/smooth.png);
+}
+
+
+.logo {
+    background-size: 44px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../img/assyria.png);
+    background-position: center center;
+    width: 44px;
+    height: 44px;
+}
+
+.large-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.large-9 {
+    width: 75%;
+}
+
+.large-4 {
+    width: 33.33333%;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.nowrap {
+    display: inline-block;
+    text-decoration: inherit;
+    white-space: nowrap;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-hide {
+    display: none;
+}
+
+.large-hide {
+    display: none;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.image-overview-display-blurred {
+    display: none;
+}
+
+@media only screen and (max-width: 1068px) {
+    .content {
+        width: 692px;
+    }
+    
+    .column .features {
+        margin-top: 48px;
+        padding-bottom: 52px;
+    }
+
+    .section-card-intro {
+        max-width: 692px;
+    }
+
+    .large-centered {
+        width: 91.66667%;
+    }
+
+    .image-overview-hero {
+        background-size: 692px 540px;
+        background-repeat: no-repeat;
+        background-image: url(../img/iclay_main.jpg);
+        width: 692px;
+        height: 540px;
+        left: 50%;
+        margin-left: -346px;
+        position: relative;
+    }
+    
+    .image-overview-display {
+        background-size: 692px 580px;
+        background-repeat: no-repeat;
+        width: 692px;
+        height: 580px;
+        left: 50%;
+        margin-left: -346px;
+        position: relative;
+    }
+    
+    .product-intro {
+        margin-top: 15px;
+    }
+    
+    .column-box {
+        float: none;
+    }
+    
+    .section-card-badge {
+        display: block;
+    }
+    
+    .section-card-badge-50 {
+        width: 100%;
+        float: none;
+        margin-bottom: 40px;
+    }
+    
+    .section-card-left, .section-card-right {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .section-display-image .section-card-intro {
+        max-width: 692px;
+    }
+    
+    .buy-box {
+        width: 50%;
+    }
+    
+    .small-hide {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .content {
+        width: 87.5%;
+    }
+    
+    .section-display.sticky {
+        top: calc(50vh - 100px);
+        position: -webkit-sticky;
+        position: sticky;
+        margin-top: 150px;
+    }
+    
+    .section-wrapper {
+        background-color: #fafafa;
+    }
+    
+    .section-card-left {
+        background-color: #fff;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .section-card-right {
+        background-color: #fff;
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .section-card-badge {
+        margin: 0;
+    }
+    
+    .section-card-badge .badge {
+        margin: 0;
+    }
+    
+    .section-card-badge-50 {
+        margin-bottom: 10px;
+    }
+    
+    .section-card-badge .badge .badge-content {
+        margin-top: 8px;
+    }
+    
+    .image-overview-hero {
+        background-size: 415px 324px;
+        background-repeat: no-repeat;
+        background-image: url(../img/iclay_main.jpg);
+        width: 415px;
+        height: 324px;
+        left: 50%;
+        margin-left: -206px;
+        position: relative;
+    }
+    
+    .image-overview-display {
+        background-size: 415px 283px;
+        background-repeat: no-repeat;
+        width: 415px;
+        height: 283px;
+        left: 50%;
+        margin-left: -206px;
+        position: relative;
+    }
+    
+    .image-overview-display-blurred {
+        background-size: 415px 283px;
+        background-repeat: no-repeat;
+        width: 415px;
+        height: 283px;
+        left: 50%;
+        margin-top: -283px;
+        margin-left: -206px;
+        position: relative;
+        transition: opacity .4s ease-out;
+        opacity: 0;
+        display: block;
+    }
+    
+    .blur {
+        opacity: 1;
+    }
+    
+    .section-display-image {
+        margin-top: -194px;
+        padding: 0 0 140px;
+        position: relative;
+    }
+    
+    .product-name {
+        font-size: 46px;
+        line-height: 1.04348;
+        font-weight: 600;
+        letter-spacing: .006em;
+    }
+    
+    .product-caption {
+        font-size: 26px;
+        line-height: 1.23077;
+        font-weight: 300;
+        letter-spacing: 0em;
+        margin-top: -1px;
+    }
+    
+    .product-intro {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+    
+    .column-product-copy {
+        padding-top: 34px;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+    
+    .feature-headline {
+        font-size: 40px;
+        line-height: 1.05;
+        font-weight: 600;
+        letter-spacing: .008em;
+    }
+    
+    .feature-eyebrow {
+        font-size: 17px;
+        line-height: 1.52947;
+        font-weight: 400;
+        letter-spacing: .018em;
+    }
+    
+    .section-card {
+        margin: 20px;
+        background-color: #fff;
+        display: block;
+    }
+    
+    .section-card-center {
+        background: #fff;
+        transform: translateZ(0);
+        margin: 20px;
+        padding: 20px;
+        width: initial;
+    }
+    
+    .section-card-intro {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .section-compare {
+        background-color: #f2f2f2;
+    }
+    
+    .image-compare {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .image-compare .image-compare-iclay {
+        margin: 0 auto;
+    }
+    
+    .image-compare .image-compare-iclay-pro {
+        margin: 0 auto;
+    }
+    
+    footer {
+        padding-top: 30px;
+    }
+    
+    .column .features p {
+        width: 120px;
+    }
+    
+    .content-head {
+        padding: 0;
+    }
+    
+    .nav-title {
+        margin-left: 10px;
+    }
+    
+    .buy-button-wrapper {
+        margin-right: 10px;
+    }
+    
+    .credit {
+        padding: 20px 0 10px;
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .image-overview-hero, .image-overview-display, .image-overview-display-blurred {
+        background-size: 300px 234px;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 234px;
+        margin-left: -150px;
+    }
+    
+    .image-overview-hero {
+        background-image: url(../img/iclay_main.jpg);
+    }
+    
+    .image-overview-display-blurred {
+    }
+    
+    .buy-box {
+        width: initial;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .credit {
+        padding-left: 5px;
+    }
+}
