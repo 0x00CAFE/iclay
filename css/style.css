@@ -321,11 +321,11 @@ nav {
 }
 
 .image-overview-hero {
-    background-size: 980px 765px;
+    background-size: 980px 723px;
     background-repeat: no-repeat;
     background-image: url(../img/iclay_main.jpg);
     width: 980px;
-    height: 765px;
+    height: 723px;
     left: 50%;
     margin-left: -490px;
     position: relative;
@@ -1079,6 +1079,14 @@ nav {
     }
     
     .image-overview-display-blurred {
+        background-repeat: no-repeat;
+        left: 50%;
+        margin-top: -234px;
+        margin-left: -150px;
+        position: relative;
+        transition: opacity .4s ease-out;
+        opacity: 0;
+        display: block;
     }
     
     .buy-box {
