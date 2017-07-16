@@ -1085,7 +1085,6 @@ nav {
         margin-left: -150px;
         position: relative;
         transition: opacity .4s ease-out;
-        opacity: 0;
         display: block;
     }
     
